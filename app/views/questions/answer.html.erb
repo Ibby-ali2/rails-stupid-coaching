@@ -1,0 +1,20 @@
+<%# <h1>Your response</h1>
+
+<p><strong>Input:</strong> <%= @answer %>
+<%# <p><strong>Response:</strong> <%= @response %>
+
+<%# <%= link_to "Ask Another Question", ask_path %>
+
+<h1 class="mb-4">Stupid Coaching</h1>
+
+<blockquote class="blockquote">
+  <p class="mb-0"><%= @answer %></p>
+  <footer class="blockquote-footer mt-2">You</footer>
+</blockquote>
+
+<div class="alert alert-warning">
+  <strong><%= @response %></strong>
+  <footer class="blockquote-footer mt-2">Your coach</footer>
+</div>
+
+<%= link_to "Ask a new question", ask_path, class: "mt-4 d-block text-primary" %>
